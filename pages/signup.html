@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="../styles/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <div class="login">
+        <p class="login__title">Crear Cuenta</p>
+        <form class="login__form">
+          <div class="login__form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="login__input"
+              placeholder="Nombres"
+              required
+            />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="login__input"
+              placeholder="Apellidos"
+              required
+            />
+          </div>
+
+          <div class="login__form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="login__input"
+              placeholder="Correo electrónico"
+              required
+            />
+            <img
+              src="../assets/icons/mail.svg"
+              alt="icono del mensaje"
+              class="icon"
+            />
+          </div>
+
+          <div class="login__form-group">
+            <input
+              type="text"
+              id="celular"
+              name="celular"
+              class="login__input"
+              placeholder="Celular"
+            />
+          </div>
+
+          <div class="login__form-group">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+              <option value="cargo1">Cargo1</option>
+              <option value="cargo2">Cargo2</option>
+              <option value="cargo3">Cargo3</option>
+              <option value="cargo3">Cargo4</option>
+            </select>
+          </div>
+
+          <div class="login__form-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="login__input"
+              placeholder="Introduce tu contraseña"
+              required
+            />
+            <img
+              src="../assets/icons/lock.svg"
+              alt="icono del password"
+              class="icon"
+            />
+          </div>
+
+          <div class="login__form-group">
+            <button type="submit" class="button button-login">
+              Regitrarte
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

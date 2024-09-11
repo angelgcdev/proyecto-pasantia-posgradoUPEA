@@ -1,0 +1,27 @@
+:root {
+  /*Color palette*/
+  --antique-white: #faf9f6;
+  --black: #0d0d0d;
+  --sky: #0682ed;
+  --skyBlue: #0788d9;
+  --lightBlue: #0d7ad9;
+  --blue: #1261a6;
+  --deepBlue: #015ba8;
+  --lightYellow: hsl(25, 100%, 97%);
+  --lightGray: #ffe1cc;
+  --seashell: #adb2c5;
+  --gray: #868b97;
+  --red: #f24162;
+  --lightRed: hsl(349, 77%, 70%);
+  --yellow: #f2c12e;
+  --gold: #f2ae2e;
+
+  /*Font sizes*/
+  --titulo1: 3.6rem;
+  --titulo2: 2.8rem;
+  --titulo3: 2rem;
+  --titulo4: 1.6rem;
+  --normal: 1.6rem;
+  --small: 1.4rem;
+  --smaller: 1.2rem;
+}

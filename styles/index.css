@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "variables.css"; /*Variables, paleta de colores y fuente*/
+@import "layout.css"; /*Estilos generales*/
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*Background*/
+.container {
+  width: inherit;
+  height: inherit;
+  background-image: url(../assets/images/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.overlay {
+  background-color: rgba(8, 14, 30, 0.48);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+}
+
+.menu__container {
+  position: relative;
+  z-index: 20;
+  width: inherit;
+  height: inherit;
+  z-index: 20;
+  color: var(--antique-white);
+  padding: 1.6rem;
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/*Estilos para el menu principal*/
+.header {
+  margin-bottom: 1.6rem;
+}
+
+.header__title {
+  color: var(--antique-white);
+  font-size: var(--titulo3);
+}
+
+.main {
+  height: 85vh;
+}
+
+.navbar {
+  padding: 1rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--skyBlue);
+}
+
+.navbar__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+
+.navbar__link {
+  display: inline-block;
+}
+
+.navbar__icon {
+  width: 4rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.navbar__icon:hover {
+  transform: scale(1.1);
+}
+
+.navbar__icon:active {
+  transform: scale(0.9);
+  filter: brightness(0.8);
+  transition: transform 0.1s ease, filter 0.1s ease;
+}

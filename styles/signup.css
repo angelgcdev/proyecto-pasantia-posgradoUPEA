@@ -52,10 +52,14 @@ body {
   width: 100%;
   height: 100%;
   margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login__form-group {
-  width: 100%;
+  width: 90%;
   margin-bottom: 1.6rem;
   position: relative;
   display: inline-block;
@@ -69,10 +73,32 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--antique-white);
   font-size: var(--normal);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
   outline: none;
 
   padding-right: 4rem;
   margin-bottom: 1.6rem;
+}
+
+.login__select {
+  width: 100%;
+  background-color: transparent;
+  color: var(--antique-white);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--normal);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--antique-white);
+}
+
+.login__select option {
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
 }
 
 .icon {
@@ -140,8 +166,16 @@ body {
 }
 
 /*------Media queries------*/
-@media (min-width: 760px) {
+@media (min-width: 600px) {
   .login {
-    max-width: 76rem;
+    max-width: 60rem;
+  }
+
+  .login__form-group:nth-of-type(1),
+  .login__form-group:nth-of-type(2) {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
   }
 }

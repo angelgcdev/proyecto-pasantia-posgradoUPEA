@@ -33,38 +33,33 @@
 
           <div class="login__form-group">
             <input
-              type="email"
-              id="email"
-              name="email"
+              type="text"
+              id="oficina"
+              name="oficina"
               class="login__input"
-              placeholder="Correo electrónico"
+              placeholder="Oficina"
               required
             />
-            <img
-              src="../assets/icons/mail.svg"
-              alt="icono del mensaje"
-              class="icon"
-            />
+
+            <select class="login__select" name="cargo" id="cargo">
+              <option value="" disabled selected>Selecciona un cargo</option>
+              <option value="1">Técnico</option>
+              <option value="2">Pasante</option>
+              <option value="3">Coordinador</option>
+              <option value="4">Posgraduante</option>
+              <option value="5">Personal de apoyo</option>
+            </select>
           </div>
 
           <div class="login__form-group">
             <input
-              type="text"
+              type="tel"
               id="celular"
               name="celular"
               class="login__input"
               placeholder="Celular"
+              required
             />
-          </div>
-
-          <div class="login__form-group">
-            <label for="cargo">Cargo</label>
-            <select name="cargo" id="cargo">
-              <option value="cargo1">Cargo1</option>
-              <option value="cargo2">Cargo2</option>
-              <option value="cargo3">Cargo3</option>
-              <option value="cargo3">Cargo4</option>
-            </select>
           </div>
 
           <div class="login__form-group">
@@ -84,8 +79,24 @@
           </div>
 
           <div class="login__form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="login__input"
+              placeholder="Correo electrónico"
+              required
+            />
+            <img
+              src="../assets/icons/mail.svg"
+              alt="icono del mensaje"
+              class="icon"
+            />
+          </div>
+
+          <div class="login__form-group">
             <button type="submit" class="button button-login">
-              Regitrarte
+              Crear cuenta
             </button>
           </div>
         </form>

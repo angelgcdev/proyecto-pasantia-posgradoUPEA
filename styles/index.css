@@ -60,6 +60,65 @@ body {
   height: 85vh;
 }
 
+.main__section {
+}
+
+.request {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: inherit;
+}
+
+.request__info {
+  background-color: var(--antique-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: 4px solid var(--red);
+
+  box-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.request__info-details {
+  width: 80%;
+}
+
+.request__actions {
+  text-align: center;
+}
+
+.request__action-icon {
+  width: 3.5rem;
+}
+
+.request__text {
+  color: var(--gray);
+  font-size: var(--small);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.request__text-area {
+  font-weight: bold;
+  color: var(--black);
+  font-size: var(--normal);
+}
+
+.request__info-validation {
+  text-align: center;
+}
+
+.request__info-validation-icon {
+  color: green;
+  font-size: var(--smaller);
+}
+
 .navbar {
   padding: 1rem;
   width: 100vw;
